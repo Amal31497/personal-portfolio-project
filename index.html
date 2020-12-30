@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Example Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <a class="nav-link active" id="home-tab" data-bs-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Home</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <a class="nav-link" id="portfolio-tab" data-bs-toggle="tab" href="#portfolio" role="tab" aria-controls="portfolio" aria-selected="false">Portfolio</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <a class="nav-link" id="contact-tab" data-bs-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Contact</a>
+                </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+    <div class="container-fluid">
+        <div class="row">
+          <div class="col-4">
+            <img src="picture-1.jpg" alt="" class="img-fluid" id="pic-1">
+          </div>
+          <div class="col">
+            <img src="picture-2.jpg" alt="" class="img-fluid" id="pic-2">
+          </div>
+          <div class="col">
+            <img src="picture-3.jpeg" alt="" class="img-fluid" id="pic-3">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col d-flex align-items-end">
+            <img src="picture-3.jpeg" alt="" class="img-fluid" id="pic-4">
+          </div>
+          <div class="col">
+            <img src="picture-2.jpg" alt="" class="img-fluid" id="pic-5">
+          </div>
+          <div class="col-4">
+            <img src="picture-1.jpg" alt="" class="img-fluid" id="pic-6">
+          </div>
+        </div>
+    </div>
+    <script>
+      $(document).ready(function(){
+        $("#pic-1").fadeOut(1000, function(){
+            $("#pic-1").fadeIn(1000);
+        });
+        $("#pic-2").delay(1000).fadeOut(1000, function(){
+            $("#pic-2").fadeIn(1000);
+        });
+        $("#pic-3").delay(2000).fadeOut(1000, function(){
+            $("#pic-3").fadeIn(1000);
+        });
+        $("#pic-4").delay(3000).fadeOut(1000, function(){
+            $("#pic-4").fadeIn(1000);
+        });
+        $("#pic-5").delay(4000).fadeOut(1000, function(){
+            $("#pic-5").fadeIn(1000);
+        });
+        $("#pic-6").delay(5000).fadeOut(1000, function(){
+            $("#pic-6").fadeIn(1000);
+        });
+        });
+    </script>
+  </body>
+
+</html>
