@@ -1,0 +1,40 @@
+
+#navigation {
+    position: relative ;
+    display: none;
+}
+img {
+    width: 100% !important;
+    height: 100% !important;
+}
+body, html {
+    height: 100%;
+    margin: 0;
+  }
+
+.bg {
+    /* The image used */
+    /* background-image: url(background-2.gif); */
+    /* Full height */
+    height: 100%; 
+    display: none;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  #first {
+    font-family: 'Audiowide', cursive;
+    color: whitesmoke;
+    width: 16em;
+    display: none;
+    margin-left: 200px !important;
+  }
+  
+  .p-2 {
+    font-family: 'Audiowide', cursive;
+    color: whitesmoke;
+    width: 4em;
+    display: none;
+    margin-left: 20px !important;
+  }
